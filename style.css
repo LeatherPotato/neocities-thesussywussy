@@ -1,0 +1,128 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+@font-face {
+    font-family: "PixelOperator";
+    src: url("./pixel-operator-font/PixelOperator.ttf");
+}
+
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: "PixelOperator";
+  font-size: 1.5em;
+}
+
+#index-main {
+    width: 90%;
+    height: 85%;
+
+    padding: 5%;
+    margin: 0;
+    border: 0;
+
+    color: #fde1c2;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#index-main-background {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(175deg, #1e1c1d, #272425, #542217);
+
+    margin: 0;
+    padding: 0;
+}
+
+#index-main-right {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.window {
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow-y: scroll;
+    border-width: 0.2em;
+    border-color: white;
+    border-style: solid;
+
+}
+
+#welcome {
+    width: 60%;
+    height: 100%;
+}
+
+#music {
+    width: 30vw;
+    height: fit-content;
+}
+
+.header__inner {
+    margin: 0;
+    padding: 0;
+}
+
+
+#music .window-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#music .window-content div {
+    
+}
+
+#what-now {
+    width: 30vw;
+    height: fit-content;
+    
+}
+
+
+#what-now .window-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#what-now img {
+    max-width: 100%;
+}
+
+.window-top-bar {
+    width: 100%;
+    height: 1.5em;
+    background: linear-gradient(to left, #1e1c1d, #c24d3c);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window-top-bar-buttoms {
+    padding-left: 0.5em;
+}
+
+.window-top-bar-text {
+    padding-right: 0.5em;
+    color: #fde1c2;
+}
+
+.window-content {
+    padding: 0.5em;
+}
